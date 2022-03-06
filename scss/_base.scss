@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+  background-image: url('../assets/desktop/image-host.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: var(--color-silver);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-light);
+  margin: 102px 0 130px 165px;
+  height: 100%;
+}
+
+h1, p {
+  font-weight: var(--font-weight-light);
+}
+
+button {
+  font-size: var(--font-size-btn);
+  font-weight: var(--font-weight-bold);
+}

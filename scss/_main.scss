@@ -1,0 +1,35 @@
+main {
+  background-color: var(--color-dark-blue);
+  margin-top: 103px;
+  padding-top: 88px;
+  height: 509px;
+  width: 723px;
+
+  h1 {
+    font-size: 5.2rem;
+    line-height: var(--line-height-title);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .highlight {
+    color: var(--color-green);
+  }
+
+  p {
+    line-height: var(--line-height-body);
+    margin-bottom: 40px;
+    padding-right: 278px;
+  }
+
+  form {
+    margin-bottom: 64px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 99px;
+  }
+}

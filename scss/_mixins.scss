@@ -1,0 +1,11 @@
+@mixin respondTo ($bp) {
+  @media only screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin breakpoint-2xl {
+  @media only screen and (max-width: 1365px) {
+    @content;
+  }
+}

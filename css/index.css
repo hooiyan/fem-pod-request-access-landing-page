@@ -1,0 +1,88 @@
+:root {
+  --color-green: #54E6AF;
+  --color-light-green: #B3FFE2;
+  --color-dark-blue: #121725;
+  --color-white: #FFFFFF;
+  --color-dark-grey: #2C344B;
+  --color-light-grey: #5A668A;
+  --color-silver: #C2CBE5;
+  --color-red: #FB3E3E;
+}
+
+:root {
+  --font-family: "Chivo", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+  --font-size-title: 5.2rem;
+  --font-size-body: 1.8rem;
+  --font-size-btn: 1.4rem;
+  --line-height-title: 62px;
+  --line-height-body: 28px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+  background-image: url("../assets/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: var(--color-silver);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-light);
+  margin: 102px 0 130px 165px;
+  height: 100%;
+}
+
+h1, p {
+  font-weight: var(--font-weight-light);
+}
+
+button {
+  font-size: var(--font-size-btn);
+  font-weight: var(--font-weight-bold);
+}
+
+main {
+  background-color: var(--color-dark-blue);
+  margin-top: 103px;
+  padding-top: 88px;
+  height: 509px;
+  width: 723px;
+}
+main h1 {
+  font-size: 5.2rem;
+  line-height: var(--line-height-title);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+main .highlight {
+  color: var(--color-green);
+}
+main p {
+  line-height: var(--line-height-body);
+  margin-bottom: 40px;
+  padding-right: 278px;
+}
+main form {
+  margin-bottom: 64px;
+}
+main .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 99px;
+}
+
+/*# sourceMappingURL=index.css.map */
