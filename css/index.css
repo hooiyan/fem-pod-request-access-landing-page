@@ -14,6 +14,8 @@
   --font-weight-light: 300;
   --font-weight-bold: 700;
   --font-size-title: 5.2rem;
+  --font-size-title-tablet: 4.8rem;
+  --font-size-title-mobile: 2.6rem;
   --font-size-body: 1.8rem;
   --font-size-btn: 1.4rem;
   --line-height-title: 62px;
@@ -44,12 +46,43 @@ body {
   margin: 102px 0 130px 165px;
   height: 100%;
 }
+@media only screen and (max-width: 1300px) {
+  body {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  body {
+    background-position: right 90%, 120% center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    background-position: right 90%, 140% center;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  body {
+    background-position: right 90%, 160% center;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  body {
+    background-position: right 90%, 180% center;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  body {
+    background-position: right 68%, 140% top;
+    margin: 50px 0 257px 50px;
+  }
+}
 
 h1, p {
   font-weight: var(--font-weight-light);
 }
 
-button {
+.button {
   font-size: var(--font-size-btn);
   font-weight: var(--font-weight-bold);
 }
@@ -61,11 +94,22 @@ main {
   height: 509px;
   width: 723px;
 }
+@media only screen and (max-width: 1080px) {
+  main {
+    height: 509px;
+    width: 635px;
+  }
+}
 main h1 {
   font-size: 5.2rem;
   line-height: var(--line-height-title);
   margin-bottom: 24px;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1080px) {
+  main h1 {
+    font-size: var(--font-size-title-tablet);
+  }
 }
 main .highlight {
   color: var(--color-green);
@@ -74,6 +118,11 @@ main p {
   line-height: var(--line-height-body);
   margin-bottom: 40px;
   padding-right: 278px;
+}
+@media only screen and (max-width: 1080px) {
+  main p {
+    padding-right: 200px;
+  }
 }
 main form {
   margin-bottom: 64px;
@@ -91,7 +140,7 @@ main form input {
 main form input::placeholder {
   font-weight: var(--font-weight-bold);
 }
-main form button {
+main form .button {
   background-color: var(--color-green);
   border: none;
   border-radius: 28px;
@@ -100,7 +149,7 @@ main form button {
   width: 16.2rem;
   transform: translateX(-17.2rem);
 }
-main form button:hover {
+main form .button:hover {
   background-color: var(--color-light-green);
   cursor: pointer;
 }

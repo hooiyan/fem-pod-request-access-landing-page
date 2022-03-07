@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -21,13 +23,38 @@ body {
   font-weight: var(--font-weight-light);
   margin: 102px 0 130px 165px;
   height: 100%;
+
+  @include respondTo(1300px) {
+    margin-left: 100px;
+  }
+  
+  @include respondTo(1250px) {
+    background-position: right 90%, 120% center;
+  }
+
+  @include respondTo(1200px) {
+    background-position: right 90%, 140% center;
+  }
+
+  @include respondTo(1150px) {
+    background-position: right 90%, 160% center;
+  }
+
+  @include respondTo(1110px) {
+    background-position: right 90%, 180% center;
+  }
+
+  @include respondTo(1080px) {
+    background-position: right 68%, 140% top;
+    margin: 50px 0 257px 50px;
+  }
 }
 
 h1, p {
   font-weight: var(--font-weight-light);
 }
 
-button {
+.button {
   font-size: var(--font-size-btn);
   font-weight: var(--font-weight-bold);
 }

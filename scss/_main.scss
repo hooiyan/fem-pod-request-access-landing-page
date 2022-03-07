@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 main {
   background-color: var(--color-dark-blue);
   margin-top: 103px;
@@ -5,11 +7,20 @@ main {
   height: 509px;
   width: 723px;
 
+  @include respondTo(1080px) {
+    height: 509px;
+    width: 635px;
+  }
+
   h1 {
     font-size: 5.2rem;
     line-height: var(--line-height-title);
     margin-bottom: 24px;
     text-transform: uppercase;
+
+    @include respondTo(1080px) {
+      font-size: var(--font-size-title-tablet);
+    }
   }
 
   .highlight {
@@ -20,6 +31,10 @@ main {
     line-height: var(--line-height-body);
     margin-bottom: 40px;
     padding-right: 278px;
+
+    @include respondTo(1080px) {
+      padding-right: 200px;
+    }
   }
 
   form {
@@ -40,7 +55,7 @@ main {
       }
     }
 
-    button {
+    .button {
       background-color: var(--color-green);
       border: none;
       border-radius: 28px;
