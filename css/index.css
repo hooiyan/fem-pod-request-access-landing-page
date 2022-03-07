@@ -34,9 +34,9 @@ html {
 
 body {
   background-color: var(--color-dark-blue);
-  background-image: url("../assets/desktop/image-host.jpg");
+  background-image: url("../assets/desktop/bg-pattern-dots.svg"), url("../assets/desktop/image-host.jpg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 90%, right center;
   color: var(--color-silver);
   font-family: var(--font-family);
   font-size: var(--font-size-body);
@@ -78,11 +78,37 @@ main p {
 main form {
   margin-bottom: 64px;
 }
+main form input {
+  background-color: var(--color-dark-grey);
+  border: none;
+  border-radius: 28px;
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  height: 56px;
+  width: 42.7rem;
+  padding: 14px 32px;
+}
+main form input::placeholder {
+  font-weight: var(--font-weight-bold);
+}
+main form button {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 28px;
+  color: var(--color-dark-blue);
+  height: 46px;
+  width: 16.2rem;
+  transform: translateX(-17.2rem);
+}
+main form button:hover {
+  background-color: var(--color-light-green);
+  cursor: pointer;
+}
 main .logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 99px;
+  padding-right: 187px;
 }
 
 /*# sourceMappingURL=index.css.map */

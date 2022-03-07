@@ -12,9 +12,9 @@ html {
 
 body {
   background-color: var(--color-dark-blue);
-  background-image: url('../assets/desktop/image-host.jpg');
+  background-image: url('../assets/desktop/bg-pattern-dots.svg'), url('../assets/desktop/image-host.jpg');
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 90%, right center;
   color: var(--color-silver);
   font-family: var(--font-family);
   font-size: var(--font-size-body);
