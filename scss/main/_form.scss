@@ -67,4 +67,22 @@ main {
       }
     }
   }
+
+  .inactive {
+    display: none;
+  }
+
+  .error {
+    display: block;
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    margin-left: 32px;
+    margin-top: 8px;
+
+    @include respondTo(700px) {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
 }

@@ -26,9 +26,10 @@
     <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
   
     <div class="wrapper">
-      <form>
+      <form autocomplete="off" novalidate>
         <input type="email" name="email" id="email" placeholder="Email address" required>
         <input type="submit" class="button" value="Request access" />
+        <p id="form-error" class="inactive">Oops! Please check your email</p>
       </form>
     
       <section class="logos">
