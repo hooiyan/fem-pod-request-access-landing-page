@@ -55,5 +55,23 @@ main {
         width: 7.7rem;
       }
     }
+
+    @include respondTo(360px) {
+      .spotify {
+        width: 4.6rem;
+      }
+  
+      .apple {
+        width: 3.5rem;
+      }
+  
+      .google {
+        width: 6.3rem;
+      }
+  
+      .pocket {
+        width: 6.7rem;
+      }
+    }
   }
 }

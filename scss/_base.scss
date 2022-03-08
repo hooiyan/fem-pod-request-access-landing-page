@@ -80,6 +80,7 @@ body {
   @include respondTo(375px) {
     &::before {
       background-image: url('../assets/mobile/image-host.jpg');
+      background-size: 100% 100%;
     }
   }
 }

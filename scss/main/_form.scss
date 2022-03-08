@@ -12,6 +12,10 @@ main {
       padding: 0 60px;
       width: 100%;
     }
+
+    @include respondTo(360px) {
+      padding: 0;
+    }
     
     input {
       background-color: var(--color-dark-grey);
@@ -27,6 +31,10 @@ main {
         margin-bottom: 16px;
         height: 4.6rem;
         width: 32.7rem;
+      }
+
+      @include respondTo(360px) {
+        width: 100%;
       }
 
       &::placeholder {
@@ -47,6 +55,10 @@ main {
         transform: translateX(0);
         height: 4.6rem;
         width: 32.7rem;
+      }
+
+      @include respondTo(360px) {
+        width: 100%;
       }
       
       &:hover {

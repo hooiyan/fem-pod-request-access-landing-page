@@ -110,6 +110,7 @@ body {
 @media only screen and (max-width: 375px) {
   body::before {
     background-image: url("../assets/mobile/image-host.jpg");
+    background-size: 100% 100%;
   }
 }
 
@@ -241,6 +242,11 @@ main form {
     width: 100%;
   }
 }
+@media only screen and (max-width: 360px) {
+  main form {
+    padding: 0;
+  }
+}
 main form input {
   background-color: var(--color-dark-grey);
   border: none;
@@ -256,6 +262,11 @@ main form input {
     margin-bottom: 16px;
     height: 4.6rem;
     width: 32.7rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  main form input {
+    width: 100%;
   }
 }
 main form input::placeholder {
@@ -275,6 +286,11 @@ main form .button {
     transform: translateX(0);
     height: 4.6rem;
     width: 32.7rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  main form .button {
+    width: 100%;
   }
 }
 main form .button:hover {
@@ -330,6 +346,20 @@ main .logos {
   }
   main .logos .pocket {
     width: 7.7rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  main .logos .spotify {
+    width: 4.6rem;
+  }
+  main .logos .apple {
+    width: 3.5rem;
+  }
+  main .logos .google {
+    width: 6.3rem;
+  }
+  main .logos .pocket {
+    width: 6.7rem;
   }
 }
 
