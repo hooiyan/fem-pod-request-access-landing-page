@@ -1,0 +1,32 @@
+@use '../mixins' as *;
+
+main {
+  background-color: var(--color-dark-blue);
+  margin-top: 103px;
+  padding-top: 88px;
+  height: 509px;
+  width: 723px;
+
+  @include respondTo(1080px) {
+    height: 509px;
+    width: 635px;
+  }
+
+  @include respondTo(1024px) {
+    margin-top: 152px;
+  }
+
+  @include respondTo(700px) {
+    background-color: transparent;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 57px;
+  }
+
+  @include respondTo(650px) {
+    margin-top: 0;
+  }
+}

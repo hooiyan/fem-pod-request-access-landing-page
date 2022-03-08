@@ -30,7 +30,6 @@
 
 html {
   font-size: 62.5%;
-  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -73,8 +72,44 @@ body {
 }
 @media only screen and (max-width: 1080px) {
   body {
-    background-position: right 68%, 140% top;
-    margin: 50px 0 257px 50px;
+    background-position: right 90%, 140% center;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  body {
+    background-position: right 90%, 200% center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    background-image: url("../assets/desktop/bg-pattern-dots.svg"), url("../assets/tablet/image-host.jpg");
+    background-position: 5% bottom, right top;
+    margin: 50px 0 130px 39px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: none;
+    margin: 50px 24px 130px;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--color-dark-blue);
+    background-image: url("../assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body::before {
+    background-image: url("../assets/mobile/image-host.jpg");
   }
 }
 
@@ -85,6 +120,12 @@ h1, p {
 .button {
   font-size: var(--font-size-btn);
   font-weight: var(--font-weight-bold);
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    text-align: center;
+  }
 }
 
 main {
@@ -100,6 +141,35 @@ main {
     width: 635px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  main {
+    margin-top: 152px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  main {
+    background-color: transparent;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 57px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 main h1 {
   font-size: 5.2rem;
   line-height: var(--line-height-title);
@@ -109,6 +179,18 @@ main h1 {
 @media only screen and (max-width: 1080px) {
   main h1 {
     font-size: var(--font-size-title-tablet);
+    line-height: 56px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main h1 {
+    font-size: calc(var(--font-size-title-tablet) - 1rem);
+    line-height: 38px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main h1 {
+    font-size: var(--font-size-title-mobile);
   }
 }
 main .highlight {
@@ -124,8 +206,40 @@ main p {
     padding-right: 200px;
   }
 }
+@media only screen and (max-width: 700px) {
+  main p {
+    padding: 0 100px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main p {
+    padding: 0 60px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main p {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main p {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
 main form {
   margin-bottom: 64px;
+}
+@media only screen and (max-width: 700px) {
+  main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 60px;
+    width: 100%;
+  }
 }
 main form input {
   background-color: var(--color-dark-grey);
@@ -136,6 +250,13 @@ main form input {
   height: 56px;
   width: 42.7rem;
   padding: 14px 32px;
+}
+@media only screen and (max-width: 700px) {
+  main form input {
+    margin-bottom: 16px;
+    height: 4.6rem;
+    width: 32.7rem;
+  }
 }
 main form input::placeholder {
   font-weight: var(--font-weight-bold);
@@ -149,15 +270,67 @@ main form .button {
   width: 16.2rem;
   transform: translateX(-17.2rem);
 }
+@media only screen and (max-width: 700px) {
+  main form .button {
+    transform: translateX(0);
+    height: 4.6rem;
+    width: 32.7rem;
+  }
+}
 main form .button:hover {
   background-color: var(--color-light-green);
   cursor: pointer;
 }
+
 main .logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 187px;
+}
+@media only screen and (max-width: 1080px) {
+  main .logos {
+    padding-right: 99px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  main .logos {
+    margin-bottom: 48px;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .logos {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .logos .spotify {
+    width: 8rem;
+  }
+  main .logos .apple {
+    width: 7rem;
+  }
+  main .logos .google {
+    width: 12rem;
+  }
+  main .logos .pocket {
+    width: 9rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .logos .spotify {
+    width: 5.6rem;
+  }
+  main .logos .apple {
+    width: 4.5rem;
+  }
+  main .logos .google {
+    width: 7.3rem;
+  }
+  main .logos .pocket {
+    width: 7.7rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

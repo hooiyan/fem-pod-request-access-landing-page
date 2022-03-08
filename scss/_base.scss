@@ -8,7 +8,6 @@
 
 html {
   font-size: 62.5%;
-  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -45,8 +44,43 @@ body {
   }
 
   @include respondTo(1080px) {
-    background-position: right 68%, 140% top;
-    margin: 50px 0 257px 50px;
+    background-position: right 90%, 140% center;
+  }
+
+  @include respondTo(1050px) {
+    background-position: right 90%, 200% center;
+  }
+
+  @include respondTo(1024px) {
+    background-image: url('../assets/desktop/bg-pattern-dots.svg'), url('../assets/tablet/image-host.jpg');
+    background-position: 5% bottom, right top;
+    margin: 50px 0 130px 39px;
+  }
+
+  @include respondTo(700px) {
+    background-image: none;
+    margin: 50px 24px 130px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: var(--color-dark-blue);
+      background-image: url('../assets/tablet/image-host.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.2;
+    }
+  }
+
+  @include respondTo(375px) {
+    &::before {
+      background-image: url('../assets/mobile/image-host.jpg');
+    }
   }
 }
 

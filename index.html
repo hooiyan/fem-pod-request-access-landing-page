@@ -15,27 +15,31 @@
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  <header>
-    <img src="./assets/desktop/logo.svg" alt="pod logo">
-  </header>
-
- <main>
-  <h1><span class="highlight">Publish your podcasts</span> everywhere.</h1>
-
-  <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-
-  <form>
-    <input type="email" name="email" id="email" placeholder="Email address" required>
-    <input type="submit" class="button" value="Request access" />
-  </form>
-
-  <section class="logos">
-    <img src="./assets/desktop/spotify.svg" alt="spotify logo">
-    <img src="./assets/desktop/apple-podcast.svg" alt="apple podcast logo">
-    <img src="./assets/desktop/google-podcasts.svg" alt="google podcast logo">
-    <img src="./assets/desktop/pocket-casts.svg" alt="pocket casts logo">
-  </section>
- </main>
+  <div class="overlay">
+    <header>
+      <img src="./assets/desktop/logo.svg" alt="pod logo">
+    </header>
+  
+   <main>
+    <h1><span class="highlight">Publish your podcasts</span> everywhere.</h1>
+  
+    <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+  
+    <div class="wrapper">
+      <form>
+        <input type="email" name="email" id="email" placeholder="Email address" required>
+        <input type="submit" class="button" value="Request access" />
+      </form>
+    
+      <section class="logos">
+        <img class="spotify" src="./assets/desktop/spotify.svg" alt="spotify logo">
+        <img class="apple" src="./assets/desktop/apple-podcast.svg" alt="apple podcast logo">
+        <img class="google" src="./assets/desktop/google-podcasts.svg" alt="google podcast logo">
+        <img class="pocket" src="./assets/desktop/pocket-casts.svg" alt="pocket casts logo">
+      </section>
+    </div>
+   </main>
+  </div>
 
  <script src="./index.js"></script>
 </body>

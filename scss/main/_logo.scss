@@ -1,0 +1,59 @@
+@use '../mixins' as *;
+
+main {
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 187px;
+
+    @include respondTo(1080px) {
+      padding-right: 99px;
+    }
+
+    @include respondTo(700px) {
+      margin-bottom: 48px;
+      padding: 0 20px;
+    }
+
+    @include respondTo(650px) {
+      padding: 0;
+    }
+
+    @include respondTo(550px) {
+      .spotify {
+        width: 8rem;
+      }
+  
+      .apple {
+        width: 7rem;
+      }
+  
+      .google {
+        width: 12rem;
+      }
+  
+      .pocket {
+        width: 9rem;
+      }
+    }
+
+    @include respondTo(450px) {
+      .spotify {
+        width: 5.6rem;
+      }
+  
+      .apple {
+        width: 4.5rem;
+      }
+  
+      .google {
+        width: 7.3rem;
+      }
+  
+      .pocket {
+        width: 7.7rem;
+      }
+    }
+  }
+}

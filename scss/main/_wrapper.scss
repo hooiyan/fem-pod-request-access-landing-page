@@ -1,0 +1,8 @@
+@use '../mixins' as *;
+
+.wrapper {
+  @include respondTo(700px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

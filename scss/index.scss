@@ -2,4 +2,8 @@
 @use 'base';
 @use 'mixins';
 @use 'header';
-@use 'main';
+@use 'main/main';
+@use 'main/wrapper';
+@use 'main/text';
+@use 'main/form';
+@use 'main/logo';

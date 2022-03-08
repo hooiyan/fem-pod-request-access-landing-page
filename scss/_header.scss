@@ -1,0 +1,7 @@
+@use 'mixins' as *;
+
+header {
+  @include respondTo(700px) {
+    text-align: center;
+  }
+}

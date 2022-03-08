@@ -1,0 +1,58 @@
+@use '../mixins' as *;
+
+main {
+  form {
+    margin-bottom: 64px;
+
+    @include respondTo(700px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 0 60px;
+      width: 100%;
+    }
+    
+    input {
+      background-color: var(--color-dark-grey);
+      border: none;
+      border-radius: 28px;
+      color: var(--color-white);
+      font-weight: var(--font-weight-bold);
+      height: 56px;
+      width: 42.7rem;
+      padding: 14px 32px;
+
+      @include respondTo(700px) {
+        margin-bottom: 16px;
+        height: 4.6rem;
+        width: 32.7rem;
+      }
+
+      &::placeholder {
+        font-weight: var(--font-weight-bold);
+      }
+    }
+
+    .button {
+      background-color: var(--color-green);
+      border: none;
+      border-radius: 28px;
+      color: var(--color-dark-blue);
+      height: 46px;
+      width: 16.2rem;
+      transform: translateX(-17.2rem);
+
+      @include respondTo(700px) {
+        transform: translateX(0);
+        height: 4.6rem;
+        width: 32.7rem;
+      }
+      
+      &:hover {
+        background-color: var(--color-light-green);
+        cursor: pointer;
+      }
+    }
+  }
+}
