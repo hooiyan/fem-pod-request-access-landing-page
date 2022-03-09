@@ -30,6 +30,7 @@
 
 html {
   font-size: 62.5%;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -42,8 +43,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-light);
-  margin: 102px 0 130px 165px;
   height: 100%;
+  margin: 102px 0 130px 165px;
 }
 @media only screen and (max-width: 1300px) {
   body {
@@ -150,12 +151,12 @@ main {
 @media only screen and (max-width: 700px) {
   main {
     background-color: transparent;
-    text-align: center;
-    height: 100%;
-    width: 100%;
     position: relative;
     margin-top: 50px;
     padding-top: 57px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -253,9 +254,9 @@ main form input {
   border-radius: 28px;
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
+  padding: 14px 32px;
   height: 56px;
   width: 42.7rem;
-  padding: 14px 32px;
 }
 @media only screen and (max-width: 700px) {
   main form input {
@@ -277,9 +278,9 @@ main form .button {
   border: none;
   border-radius: 28px;
   color: var(--color-dark-blue);
+  transform: translateX(-17.2rem);
   height: 46px;
   width: 16.2rem;
-  transform: translateX(-17.2rem);
 }
 @media only screen and (max-width: 700px) {
   main form .button {
@@ -305,20 +306,20 @@ main .error {
   color: var(--color-red);
   font-size: 1.2rem;
   font-weight: var(--font-weight-bold);
-  margin-left: 32px;
   margin-top: 8px;
+  margin-left: 32px;
 }
 @media only screen and (max-width: 700px) {
   main .error {
-    margin-left: 0;
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
 main .logos {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-right: 187px;
 }
 @media only screen and (max-width: 1080px) {

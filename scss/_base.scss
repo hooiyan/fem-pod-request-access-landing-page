@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -20,8 +21,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-light);
-  margin: 102px 0 130px 165px;
   height: 100%;
+  margin: 102px 0 130px 165px;
 
   @include respondTo(1300px) {
     margin-left: 100px;

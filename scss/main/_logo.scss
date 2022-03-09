@@ -3,8 +3,8 @@
 main {
   .logos {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-right: 187px;
 
     @include respondTo(1080px) {

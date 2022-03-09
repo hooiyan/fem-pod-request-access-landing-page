@@ -18,12 +18,12 @@ main {
 
   @include respondTo(700px) {
     background-color: transparent;
-    text-align: center;
-    height: 100%;
-    width: 100%;
     position: relative;
     margin-top: 50px;
     padding-top: 57px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
 
   @include respondTo(650px) {

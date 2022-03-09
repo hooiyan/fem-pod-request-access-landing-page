@@ -23,9 +23,9 @@ main {
       border-radius: 28px;
       color: var(--color-white);
       font-weight: var(--font-weight-bold);
+      padding: 14px 32px;
       height: 56px;
       width: 42.7rem;
-      padding: 14px 32px;
 
       @include respondTo(700px) {
         margin-bottom: 16px;
@@ -47,9 +47,9 @@ main {
       border: none;
       border-radius: 28px;
       color: var(--color-dark-blue);
+      transform: translateX(-17.2rem);
       height: 46px;
       width: 16.2rem;
-      transform: translateX(-17.2rem);
 
       @include respondTo(700px) {
         transform: translateX(0);
@@ -77,12 +77,12 @@ main {
     color: var(--color-red);
     font-size: 1.2rem;
     font-weight: var(--font-weight-bold);
-    margin-left: 32px;
     margin-top: 8px;
+    margin-left: 32px;
 
     @include respondTo(700px) {
-      margin-left: 0;
       margin-top: 0;
+      margin-left: 0;
     }
   }
 }
